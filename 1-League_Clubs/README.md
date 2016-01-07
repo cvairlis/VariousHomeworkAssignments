@@ -1,7 +1,7 @@
 # VariousHomeworkAsignments
 Various Homework and Asignments
 
-Λυμένη ’σκηση (Inheritance super method invocation) 
+Λυμένη άσκηση (Inheritance super method invocation) 
 (Από εξετάσεις Ιανουάριος 2011)
 
 Η παρακάτω περιγραφή αφορά  σε μια ομάδα (Club) κάποιου πρωταθλήματος.
