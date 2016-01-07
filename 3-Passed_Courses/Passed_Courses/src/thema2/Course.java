@@ -4,7 +4,11 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
-
+/**
+ * Auth h klash montelopoiei thn ontothta Mathima - Course.
+ *  
+ *
+ */
 public class Course {
 	
 	private String name;
@@ -12,8 +16,14 @@ public class Course {
 	// ypoxrewtiko h epiloghs
 	private char kind;
 	
+	/**
+	 * Prwtos kataskeuasths
+	 */
 	public Course(){}
 	
+	/**
+	 * Deuteros kataskeuasths
+	 */
 	public Course(String name, int grade, char kind) {
 		super();
 		this.name = name;
@@ -49,6 +59,18 @@ public class Course {
 		return name + ", " + grade + " : " + kind;
 	}
 	
+	/**
+	 * H methodos auth kaleitai apo to ApplicationFrame.
+	 * Dexetai 2 parametrous mia ArrayList me mathimata kai mia boolean timh.
+	 * H methodos ousiastika taksinomei thn lista me ta mathimata ws pros to onoma tou kathe mathimatos.
+	 * Gia auksouksa taksinomish pername true sthn parametro boolean.
+	 * Gia fthinousa taksinomish pername false sthn parametro boolean. 
+	 * Einai void pou shmainei oti den epistrefei tpt.
+	 * Anti aftou "epistrefei" thn lista pou perasame san parametro taksinomhmenh. 
+	 * 
+	 * @param ArrayList<Course> courses
+	 * @param asc
+	 */
 	public void sortByName (ArrayList<Course> courses, boolean asc){		
 		Collections.sort(courses, new Comparator<Course>() {
 			public int compare(Course c1, Course c2){
@@ -62,6 +84,18 @@ public class Course {
 		});
 	}
 	
+	/**
+	 * H methodos auth kaleitai apo to ApplicationFrame.
+	 * Dexetai 2 parametrous mia ArrayList me mathimata kai mia boolean timh.
+	 * H methodos ousiastika taksinomei thn lista me ta mathimata ws pros to vathmo tou kathe mathimatos.
+	 * Gia auksouksa taksinomish pername true sthn parametro boolean.
+	 * Gia fthinousa taksinomish pername false sthn parametro boolean. 
+	 * Einai void pou shmainei oti den epistrefei tpt.
+	 * Anti aftou "epistrefei" thn lista pou perasame san parametro taksinomhmenh. 
+	 * 
+	 * @param ArrayList<Course> courses
+	 * @param asc
+	 */
 	public void sortByGrade (ArrayList<Course> courses, boolean asc){		
 		Collections.sort(courses, new Comparator<Course>() {
 			public int compare(Course c1, Course c2){
@@ -84,6 +118,13 @@ public class Course {
 		});
 	}
 	
+	/**
+	 * H methodos auth dexetai mia ArrayList me courses, vriskei to meso oro (average) twn vathmwn twn mathimatwn ths listas
+	 * kai epistrefei th timh se String morfh me 2 dekadika strogylopoihmenh. 
+	 * 
+	 * @param ArrayList<Course> courses
+	 * @return String avgFormatted
+	 */
 	public String getAverage(ArrayList<Course> courses){
 		int sum = 0; 
 		for (Course c: courses){
@@ -94,12 +135,24 @@ public class Course {
 		return avgFormatted;
 	}
 	
+	/**
+	 * H methodos auth dexetai mia ArrayList<Course> me mathimata kai ena String pou prosdiorizei to eidos tou kathe mathimatos (Y/E).
+	 * Ypologizei posa mathimata apo kathe eidos apomenoun gia thn apokthsh ptyxiou. 
+	 * Gia thn apokthsh ptyxiou oi foithtes prepei na exoun 36 ypoxrewtika mathimata perasmena (ektos Agglika) kai 12 epiloghs.
+	 * Opote kathe fora pou ekteleitai h methodos auth px gia na vrei posa ypoxrewtika mathimata apomenoun:
+	 * getRemaining(courses,"Mandatory") kai epistrefei ena String pou antiproswpeuei ton arithmo int, px apomenoun "10" mathimata.
+	 * Omoiws gia epiloghs Elective.
+	 * 
+	 * @param ArrayList<Course> courses courses
+	 * @param String kind
+	 * @return String remaining
+	 */
 	public String getRemaining(ArrayList<Course> courses, String kind){
 		int remaining = 0;
 		if (kind=="Mandatory"){
 			int mandCounter = 0;
 			for (Course c : courses){
-				if (c.getKind()=='Õ'){
+				if (c.getKind()=='Î¥'){
 					mandCounter++;
 				}
 			}
@@ -107,13 +160,12 @@ public class Course {
 		} else if (kind == "Elective") {
 			int elecCounter = 0;
 			for (Course c : courses){
-				if (c.getKind()=='Å'){
+				if (c.getKind()=='Î•'){
 					elecCounter++;
 				}
 			}
 			remaining = 12 - elecCounter;			
 		}
 		return Integer.toString(remaining);
-	}
-	
+	}	
 }
