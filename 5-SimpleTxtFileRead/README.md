@@ -1,5 +1,5 @@
-# VariousHomeworkAsignments
-Various Homework and Asignments.
+# VariousHomeworkAssignments
+Various Homework and Assignments
 
 Να αναπτύξετε πρόγραμμα σε Java το οποίο να επιτρέπει μέσω γραφικής διασύνδεσης χρήστη (gui) διάβασμα πληροφοριών φοιτητών από ένα αρχείο κειμένου .txt και εκτύπωση των πληροφοριών αυτών στη κονσόλα.
 Κάθε φοιτητής (Student) χαρακτηρίζεται από 2 πεδία: επίθετο (surname: String), αριθμό μητρώου (am: int).

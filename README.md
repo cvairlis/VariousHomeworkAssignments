@@ -1,2 +1,2 @@
-# VariousHomeworkAsignments
-Various Homework and Asignments
+# VariousHomeworkAssignments
+Various Homework and Assignments

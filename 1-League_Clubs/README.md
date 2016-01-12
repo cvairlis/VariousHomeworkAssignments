@@ -1,5 +1,5 @@
-# VariousHomeworkAsignments
-Various Homework and Asignments
+# VariousHomeworkAssignments
+Various Homework and Assignments
 
 Λυμένη άσκηση (Inheritance super method invocation) 
 (Από εξετάσεις Ιανουάριος 2011)
