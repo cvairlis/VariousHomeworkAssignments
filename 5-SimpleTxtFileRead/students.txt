@@ -1,0 +1,15 @@
+Alfas, 00001
+Vitas, 00002
+Gamas, 00003
+Deltas, 20002, 1
+Epsilos, 20001, 2
+Zhtas, 44001
+Htas, 11101, 2
+Thitas, 12022, 3
+Giotas, 00022
+Kappas, 33022
+Lamdas, 00241, 1
+Mis, 42145, 4
+Nis, 00053
+Ksis, 00241
+Omikros, 21512, 2
