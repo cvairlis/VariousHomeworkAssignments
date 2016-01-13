@@ -42,7 +42,7 @@ public class Student {
 
 	public String toString() {
 		if (numberOfTitles==0){
-			return "O foithths " + name + " exei arithmo mhtrwou " + am + " Den katexei mexri twra kanena ptyxio.";
+			return "O foithths " + name + " exei arithmo mhtrwou " + am + ". Den katexei mexri twra kanena ptyxio.";
 		} else {
 			return "O foithths " + name + " exei arithmo mhtrwou " + am + ". Einai epipleon metaptyxiakos foithths kai meta to peras ths trexousas foithshs tou tha katexei synolika " + (numberOfTitles+1) + " ptyxia.";
 		}
@@ -50,7 +50,7 @@ public class Student {
 	
 	public void printInfo(){
 		if (numberOfTitles==0){
-			System.out.println("O foithths " + name + " exei arithmo mhtrwou " + am + " Den katexei mexri twra kanena ptyxio.");
+			System.out.println("O foithths " + name + " exei arithmo mhtrwou " + am + ". Den katexei mexri twra kanena ptyxio.");
 		} else {
 			System.out.println("O foithths " + name + " exei arithmo mhtrwou " + am + ". Einai epipleon metaptyxiakos foithths kai meta to peras ths trexousas foithshs tou tha katexei synolika " + (numberOfTitles+1) + " ptyxia.");
 		}	
