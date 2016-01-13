@@ -3,7 +3,7 @@
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
   <class id="1" language="java" name="simpleTxtFileRead.Reader" project="SimpleTxtFileRead" 
     file="/SimpleTxtFileRead/src/simpleTxtFileRead/Reader.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="117" width="249" x="212" y="137"/>    
+    <position height="-1" width="-1" x="561" y="503"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -12,8 +12,8 @@
   </class>  
   <class id="2" language="java" name="simpleTxtFileRead.ApplicationFrame" project="SimpleTxtFileRead" 
     file="/SimpleTxtFileRead/src/simpleTxtFileRead/ApplicationFrame.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="171" width="135" x="501" y="137"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    <position height="213" width="230" x="184" y="41"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
@@ -21,7 +21,7 @@
   </class>  
   <class id="3" language="java" name="simpleTxtFileRead.ApplicationFrame.MyButtonListener" project="SimpleTxtFileRead" 
     file="/SimpleTxtFileRead/src/simpleTxtFileRead/ApplicationFrame.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="99" width="194" x="482" y="348"/>    
+    <position height="-1" width="-1" x="538" y="105"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -30,7 +30,7 @@
   </class>  
   <class id="4" language="java" name="simpleTxtFileRead.Student" project="SimpleTxtFileRead" 
     file="/SimpleTxtFileRead/src/simpleTxtFileRead/Student.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="297" width="157" x="285" y="348"/>    
+    <position height="-1" width="-1" x="298" y="430"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -39,7 +39,7 @@
   </class>  
   <class id="5" language="java" name="simpleTxtFileRead.Main" project="SimpleTxtFileRead" 
     file="/SimpleTxtFileRead/src/simpleTxtFileRead/Main.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="135" width="175" x="501" y="-38"/>    
+    <position height="-1" width="-1" x="92" y="91"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -48,32 +48,40 @@
   </class>  
   <association id="6">    
     <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="7" name="students"/>      
-      <multiplicity id="8" minimum="0" maximum="2147483647"/>    
+      <attribute id="7" name="students">        
+        <position height="0" width="0" x="-65" y="-66"/>      
+      </attribute>      
+      <multiplicity id="8" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="-65" y="-66"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="4" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="9">    
-    <end type="SOURCE" refId="5" navigable="false">      
-      <attribute id="10" name="app"/>      
-      <multiplicity id="11" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="2" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="12">    
     <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="13" name="students"/>      
-      <multiplicity id="14" minimum="0" maximum="2147483647"/>    
+      <attribute id="10" name="students">        
+        <position height="0" width="0" x="-65" y="-66"/>      
+      </attribute>      
+      <multiplicity id="11" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="-65" y="-66"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="4" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <nesting id="15">    
+  <nesting id="12">    
     <end type="SOURCE" refId="2"/>    
     <end type="TARGET" refId="3"/>  
   </nesting>  
+  <association id="13">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="14" name="app"/>      
+      <multiplicity id="15" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    
